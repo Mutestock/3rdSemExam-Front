@@ -12,7 +12,9 @@ const StartPage = () => {
 				{" "}
 				Github Frontend
 			</a>
+			<br></br>
 			<a href="https://mutezone.site/HWExamFamilyMeal/"> Backend</a>
+			<br></br>
 			<a href="https://travis-ci.org/Mutestock/3rdSemExam">Travis</a>
 		</div>
 	);
