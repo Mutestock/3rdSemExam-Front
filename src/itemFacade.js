@@ -18,9 +18,10 @@ const itemFacade = (function() {
 	}
 
 	function readAllItems() {
-		const result = fetch(URL + "/api/item/all", makeOptions("GET", false)).then(
-			handleHttpErrors
-		);
+		const result = fetch(
+			configuration.URL + "/api/item/all",
+			makeOptions("GET", false)
+		).then(handleHttpErrors);
 	}
 
 	function updateItem(name) {

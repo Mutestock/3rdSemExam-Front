@@ -6,7 +6,7 @@ import loginFacade from "./loginFacade";
 import itemFacade from "./itemFacade";
 import mealPlanFacade from "./mealPlanFacade";
 import dayPlanFacade from "./dayPlanFacade";
-import starFacade from "./starFacade";
+import recipeFacade from "./recipeFacade";
 import createUserFacade from "./createUserFacade";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -14,6 +14,7 @@ const AppFacadeTime = () => {
 	return (
 		<div>
 			<App
+				recipeFacade={recipeFacade}
 				loginFacade={loginFacade}
 				itemFacade={itemFacade}
 				mealPlanFacade={mealPlanFacade}

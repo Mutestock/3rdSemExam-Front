@@ -5,7 +5,7 @@ const Header = ({ loggedIn }) => {
 	const userHeaders = loggedIn ? (
 		<li>
 			<NavLink activeClassName="active" to="/planner">
-				Star Wars
+				Meal Planner
 			</NavLink>
 		</li>
 	) : (

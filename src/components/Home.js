@@ -8,6 +8,7 @@ const StartPage = () => {
 			<p>Could be going better to be wholeheartedly honest with you</p>
 			<h4>Links: </h4>
 			<a href="https://github.com/Mutestock/3rdSemExam"> Github Backend</a>
+			<br></br>
 			<a href="https://github.com/Mutestock/3rdSemExam-front">
 				{" "}
 				Github Frontend

@@ -23,7 +23,7 @@ const dayPlanFacade = (function() {
 
 	function readAllDayPlans() {
 		const result = fetch(
-			URL + "/api/dayplan/all",
+			configuration.URL + "/api/dayplan/all",
 			makeOptions("GET", false)
 		).then(handleHttpErrors);
 	}

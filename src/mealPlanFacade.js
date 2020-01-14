@@ -20,7 +20,7 @@ const mealPlanFacade = (function() {
 
 	function readAllMealPlans() {
 		const result = fetch(
-			URL + "/api/mealplan/all",
+			configuration.URL + "/api/mealplan/all",
 			makeOptions("GET", false)
 		).then(handleHttpErrors);
 	}

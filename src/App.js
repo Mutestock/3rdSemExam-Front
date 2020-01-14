@@ -4,7 +4,8 @@ import "./App.css";
 import LogIn from "./components/LogIn";
 import Header from "./components/Header";
 import CreateUserPage from "./components/CreateUserPage";
-import StarWarsPage from "./components/StarWarsPage";
+import FoodPage from "./components/FoodPage";
+import recipeFacade from "d";
 import StartPage from "./components/Home";
 /* import uuid from "uuid/v1"; */
 
@@ -12,9 +13,9 @@ const NoMatch = () => {
 	return <h3>The page was not found.</h3>;
 };
 
-function App({ loginFacade, starFacade, createUserFacade }) {
+function App({ loginFacade, starFacade, createUserFacade, recipeFacade }) {
 	const [loggedIn, setLoggedIn] = useState(false);
-	const [starInfo, setStarInfo] = useState(null);
+	const [foodInfo, setFoodInfo] = useState(null);
 	const [starId, setStarId] = useState("");
 
 	// check token regularly
@@ -35,7 +36,7 @@ function App({ loginFacade, starFacade, createUserFacade }) {
 					<StartPage />
 				</Route>
 				<Route path="/createUser">
-					<CreateUserPage factory={createUserFacade} />
+					<CreateUserPage createUserFacade={createUserFacade} />
 				</Route>
 				<Route path="/login">
 					<LogIn
@@ -46,11 +47,11 @@ function App({ loginFacade, starFacade, createUserFacade }) {
 					/>
 				</Route>
 				<Route path="/planner">
-					<StarWarsPage
-						starFacade={starFacade}
+					<FoodPage
+						recipeFacade={recipeFacade}
 						loggedIn={loggedIn}
-						starInfo={starInfo}
-						setStarInfo={setStarInfo}
+						foodInfo={foodInfo}
+						setFoodInfo={setFoodInfo}
 						id={starId}
 						setId={setStarId}
 					/>

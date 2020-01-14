@@ -1,7 +1,7 @@
 // for development:
-const URL = "http://localhost:8080/teamone-ca3";
+//const URL = "http://localhost:8080/3rdSemExam";
 // actual deployed backend:
-//const URL = "https://mutezone.site/TeamOne-CA3";
+const URL = "https://mutezone.site/HWExamFamilyMeal";
 
 const configuration = (function() {
 	return {
